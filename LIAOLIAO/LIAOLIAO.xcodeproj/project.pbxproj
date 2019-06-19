@@ -16,6 +16,10 @@
 		37B0ABA022B8E54000C8BBF8 /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0AB9F22B8E54000C8BBF8 /* FormCell.swift */; };
 		37B0ABA222B8F5A300C8BBF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37B0ABA122B8F5A300C8BBF8 /* GoogleService-Info.plist */; };
 		37B0ABA422B9175300C8BBF8 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0ABA322B9175300C8BBF8 /* RoomsViewController.swift */; };
+		37DDD19222BA291A00F8069A /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DDD19122BA291A00F8069A /* Room.swift */; };
+		37DDD19422BA3B5400F8069A /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DDD19322BA3B5400F8069A /* ChatRoomViewController.swift */; };
+		37DDD19822BA40E800F8069A /* SendIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DDD19722BA40E800F8069A /* SendIcon.png */; };
+		37DDD19C22BA505C00F8069A /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DDD19B22BA505C00F8069A /* back.png */; };
 		44B2533399653860C1B8A287 /* Pods_LIAOLIAO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0886E03298D2C0117279080 /* Pods_LIAOLIAO.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +36,10 @@
 		37B0AB9F22B8E54000C8BBF8 /* FormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCell.swift; sourceTree = "<group>"; };
 		37B0ABA122B8F5A300C8BBF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		37B0ABA322B9175300C8BBF8 /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		37DDD19122BA291A00F8069A /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		37DDD19322BA3B5400F8069A /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		37DDD19722BA40E800F8069A /* SendIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SendIcon.png; sourceTree = "<group>"; };
+		37DDD19B22BA505C00F8069A /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		A0886E03298D2C0117279080 /* Pods_LIAOLIAO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LIAOLIAO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF87F0749287865BD8C9C0AA /* Pods-LIAOLIAO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIAOLIAO.release.xcconfig"; path = "Target Support Files/Pods-LIAOLIAO/Pods-LIAOLIAO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +81,8 @@
 				37B0AB8C22B8D3E500C8BBF8 /* ViewController.swift */,
 				37B0ABA322B9175300C8BBF8 /* RoomsViewController.swift */,
 				37B0AB9F22B8E54000C8BBF8 /* FormCell.swift */,
+				37DDD19322BA3B5400F8069A /* ChatRoomViewController.swift */,
+				37DDD19022BA28B800F8069A /* Models */,
 				37B0AB9C22B8D5CA00C8BBF8 /* Resources */,
 				37B0AB8E22B8D3E500C8BBF8 /* Main.storyboard */,
 				37B0AB9122B8D3E700C8BBF8 /* Assets.xcassets */,
@@ -85,10 +95,20 @@
 		37B0AB9C22B8D5CA00C8BBF8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				37DDD19B22BA505C00F8069A /* back.png */,
 				37B0ABA122B8F5A300C8BBF8 /* GoogleService-Info.plist */,
+				37DDD19722BA40E800F8069A /* SendIcon.png */,
 				37B0AB9D22B8D6ED00C8BBF8 /* chatimage1.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		37DDD19022BA28B800F8069A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37DDD19122BA291A00F8069A /* Room.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5859EE3F087DFB62887A3CDE /* Pods */ = {
@@ -168,7 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37DDD19C22BA505C00F8069A /* back.png in Resources */,
 				37B0AB9522B8D3E700C8BBF8 /* LaunchScreen.storyboard in Resources */,
+				37DDD19822BA40E800F8069A /* SendIcon.png in Resources */,
 				37B0AB9E22B8D6ED00C8BBF8 /* chatimage1.png in Resources */,
 				37B0ABA222B8F5A300C8BBF8 /* GoogleService-Info.plist in Resources */,
 				37B0AB9222B8D3E700C8BBF8 /* Assets.xcassets in Resources */,
@@ -229,6 +251,8 @@
 				37B0ABA022B8E54000C8BBF8 /* FormCell.swift in Sources */,
 				37B0AB8B22B8D3E500C8BBF8 /* AppDelegate.swift in Sources */,
 				37B0ABA422B9175300C8BBF8 /* RoomsViewController.swift in Sources */,
+				37DDD19222BA291A00F8069A /* Room.swift in Sources */,
+				37DDD19422BA3B5400F8069A /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
