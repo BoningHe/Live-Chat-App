@@ -54,6 +54,12 @@ class RoomsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         try! Auth.auth().signOut()
         self.presentLoginScreen()
     }
+    @objc func handleTap(sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            newRoomText.resignFirstResponder()
+        }
+        sender.cancelsTouchesInView = false
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.roomsTable.delegate = self
@@ -61,7 +67,7 @@ class RoomsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         observeRooms()
        self.roomsTable.backgroundView = UIImageView(image: UIImage(named: "back"))
         self.roomsTable.backgroundView?.alpha = 0.5
-
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
